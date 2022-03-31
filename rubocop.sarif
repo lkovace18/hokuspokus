@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "RuboCop",
+          "version": "1.26.1",
+          "informationUri": "https://rubocop.org",
+          "rules": [
+            {
+              "id": "Style/StringLiterals",
+              "name": "StyleStringLiterals",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Checks if uses of quotes match the configured preference.",
+                "tags": [
+                  "style"
+                ],
+                "queryURI": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringliterals"
+              },
+              "shortDescription": {
+                "text": "Checks if uses of quotes match the configured preference."
+              },
+              "fullDescription": {
+                "text": "Checks if uses of quotes match the configured preference."
+              },
+              "helpUri": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringliterals",
+              "help": {
+                "text": "More info: https://docs.rubocop.org/rubocop/cops_style.html#stylestringliterals",
+                "markdown": "[More info](https://docs.rubocop.org/rubocop/cops_style.html#stylestringliterals)"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 5,
+                  "endColumn": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 30,
+                  "endColumn": 38
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
